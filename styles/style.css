@@ -1,0 +1,815 @@
+html, body{
+    background-color: #2b2b2b;
+    margin: 0px;
+}
+h1, h2{
+    margin: 0;
+}
+footer{
+    background-color: #3b3b3b;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.nav{
+    gap: 20px;
+}
+.header {
+    /* width: 100%; */
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+.menu-link{
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+}
+.logo{
+    height: auto;
+}
+.signup-button{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+
+    background-color: #a259ff;
+    background-image: url("../images/vectorIcons/User.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    margin-left: 20px;
+    height: 60px;
+    width: 152px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.signup-button:hover {
+    background-color: #6a32e6;
+}
+
+.welcome{
+    /* width: auto; */
+    /* height: 704px; */
+    display:flex;
+    /* align-items: center; */
+    padding-top: 20px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+.image-content{
+    height: 510px;
+    width: 510px;
+    position: relative;
+    /* padding-right: 340px; */
+}
+
+.square{
+    width: 510px;
+    height: 510px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+}
+
+.placeholderImage{
+    background-image: url(../images/Image_Placeholder.jpg);
+    height: 401px;
+    width: 510px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.text-content{
+    padding-left: 300px;
+    /* flex: 1px; */
+    text-align: left;
+    margin-right: 100px;
+}
+
+.hero-title{
+    margin: 0px;
+    line-height: 1.5px;
+    margin-left: 50px;
+    font-weight: 600;
+    font-size: 67px;
+    line-height: 110%;
+    color: white;
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif; 
+}
+.hero-text{
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: white;
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+}
+.get-start:hover{
+    background-color: #6a32e6;
+}
+.get-start{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: white;
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+
+    background-color: #a259ff;
+    background-image: url("../images/vectorIcons/RocketLaunch.svg");
+    background-repeat: no-repeat;
+    background-position: 20px;
+    margin-left: 50px;
+    height: 60px;
+    width: 224px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.stats{
+    display: flex;
+    gap: 30px;
+    padding-left: 50px;
+}
+.num-stat{
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 160%;
+    color: #ffffff;
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+
+    width: 150px;
+    height: 39px;
+    padding-top: 30px;
+}
+.name-stat{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 160%;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+
+    width: 150px;
+    height: 39px;
+}
+.trending-collection{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding: 80px 195px;
+    gap: 60px;
+    width: auto;
+}
+.trending-collection-headline{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+}
+.trending-collection-main-text{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    width: 1046px;
+}
+.trending-collection-sub-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    width: 1046px;
+}
+.collections-card-column{
+    display: flex;
+    gap: 30px;
+}
+.collection-card{
+    align-items: flex-start;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    position: relative;
+
+}
+.primary-placeholder{
+    border-radius: 20px;
+    height: 330px;
+    width: 330px;
+}
+.card-row{
+    align-items: flex-start;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+.secondary-placeholder-1{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.secondary-placeholder-2{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+.placeholder-squre{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: #a259ff;
+    border-radius: 20px;
+}
+.num-in-square{
+    font-weight: 700;
+    font-size: 22px;
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    width: 68px;
+    height: 35px;
+}
+.collection-name{
+    font-weight: 600;
+    font-size: 22px;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.artist-card{
+    align-content: center;
+    align-items: flex-start;
+    display: flex;
+    gap: 15px;
+    position: relative;
+}
+.collection-author{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+}
+.avatar{
+    border-radius: 20px;
+    width: 24px;
+    height: 24px;
+}
+
+.top-creators{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 195px;
+    gap: 60px;
+    width: auto;
+    
+    /* align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 400px 80px;
+    gap: 60px;
+    width: auto;
+    height: auto; */
+}
+.top-creators-headline{
+    width: 1050px;
+    gap: 100px;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.top-creators-text{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+
+}
+.top-creators-main-text{
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 120%;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    width: 703px;
+}
+.top-creators-sub-text{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 160%;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    width: 703px;
+}
+.view-ranking{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 247px;
+    height: 60px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    border:solid #A259FF;
+    border-width: 3px;
+    transform: translateY(0); 
+    
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+.view-ranking:hover {
+    box-shadow: inset 1px 1px 10px -1px #8324FF;
+    transform: translateY(2px);
+}
+.view-ranking-img{
+    fill: #A259FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artist-cards-grid{
+    align-self: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.creators-row{
+    align-items: self-start;
+    gap: 30px;
+    display: flex;
+}
+.artist{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.artist-card{
+    border: 0;
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    height: 240px;
+    width: 238px;
+    align-items: center;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    display: flex;
+    transform: translateY(0); 
+    
+    flex-direction: column;
+    gap: 20px;
+
+    position: relative;
+}
+.artist-card:hover{
+    transform: translateY(2px); 
+    box-shadow: inset 1px 1px 10px -1px;
+}
+.creator-avatar{
+    padding-top: 20px;
+    border-radius: 100px;
+    height: 120px;
+    width: 120px;
+}
+.artist-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+.creator-text{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    height: 140%;
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+}
+.additional-info{
+    align-items: center;
+    align-self: stretch;
+    background-color: transparent;
+    display: flex;
+    gap: 5px;
+    height: auto;
+    justify-content: center;
+    position: relative;
+    /* display: flex;
+
+    gap: 10px; */
+}
+.total-sales-text{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    /* height: 140%; */
+    font-size: 16px;
+    font-weight: 400;
+    color:#858584;
+}
+.amount-of-sales{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    /* height: 140%; */
+    font-size: 16px;
+    font-weight: 400;
+    color:#ffffff;
+    gap: 10px;
+}
+.browseCategories{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 80px 400px;
+}
+.browse-categories-headline{
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    line-height: 120%;
+    width: 1046px;
+}
+.categories-card-grid{
+    align-self: center;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.categories-row{
+    align-items: self-start;
+    gap: 30px;
+    display: flex;
+}
+.categories-card{
+    height: 316px;
+    width: 240px;
+    background-color: #3b3b3b;
+    border-radius: 20px;
+    transform: translateY(0); 
+}
+.categories-image{
+    position: absolute;
+    height: 240px;
+    width: 240px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.categories-name{
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+    width: 210px;
+    height: 76px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transform: translate(0px, 140px);
+
+    font-weight: 600;
+    line-height: 140%;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    font-size: 22px;
+    color: #ffffff;
+}
+.categories-svg{
+    position: relative;
+    transform:translate(0px, 70px)
+}
+.categories-images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 240px;
+    height: 316px;
+    align-items: center;
+    position: relative;
+    transform: translateY(0); 
+}
+.categories-images:hover{
+    box-shadow: inset 1px 1px 10px -1px #000000;
+    transform: translateY(2px); 
+}
+.categories-card{
+    transform: translateY(2px);
+}
+.discover-more-nft{
+    align-items: center;
+    display: flex;
+    padding: 80px 195px;
+    flex-direction: column;
+    gap: 60px;
+}
+.discover-more-nft-header{
+    align-items: center;
+    gap: 100px;
+    width: 1050px;
+    display: flex;
+}
+.discover-more-nft-text{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 10px;
+    width: 703px;
+}
+.discover-more-nft-main-text{
+    font-size: 38px;
+    line-height: 120%;
+    font-weight: 700;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+}
+.discover-more-nft-sub-text{
+    font-size: 22px;
+    line-height: 160%;
+    font-weight: 400;
+    color: #ffffff;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+}
+
+.see-all{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 187px;
+    height: 60px;
+    background-color: #2b2b2b;
+    border-radius: 20px;
+    border:solid #A259FF;
+    border-width: 3px;
+    transform: translateY(0); 
+    
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+}
+.see-all:hover {
+    box-shadow: inset 1px 1px 10px -1px #8324FF;
+    transform: translateY(2px);
+}
+.discover-more-nft-card-row{
+    display: flex;
+    gap: 30px;
+}
+.discover-more-nft-card{
+    width: 420px;
+    height: 469px;
+    background-color: #3b3b3b;
+    border-radius: 20px;
+}
+.artist-info{
+display: flex;
+}
+.NFT-info{
+    display: flex;
+}
+.NFT-name{
+    margin: 0;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 600;
+    font-size: 22px;
+    color: #ffffff;
+}
+.avatar_nickname{
+
+}
+.discover-more-nft-img{
+    display: flex;
+    position: relative;
+    object-fit: cover;
+    width: 420px;
+    height: 296px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    
+}
+
+
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #3b3b3b;
+    
+}
+.footer-info{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 80px 195px 0px 80px;
+    width: 1050px;
+    height: 191px;
+}
+.nft-marketplace{
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 243px;
+    height: 191px;
+    gap: 30px;
+    padding-right: 120px;
+}
+.footer-logo{
+    width: 243;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nft-marketplace-sub-text{
+    width: 238px;
+    height: 129px;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-content: center; */
+    width: 240px;
+    height: 191px;
+    gap: 25px;
+}
+.explore-main-text{
+    gap: 25px;
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.explore-sub-text{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.explore-link{
+    text-decoration: none;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    height: 184px;
+    gap: 20px;
+}
+.subscribe-text{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.subscribe-main-text{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 160%;
+    color: #FFFFFF;
+}
+.subscribe-sub-text{
+    width: 330px;
+    height: 44px;
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #CCCCCC;
+}
+.subscribe-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 420px;
+    height: 60px;
+    padding-left: 27px;
+}
+.subscribe-items{
+
+}
+.subscribe-form-input{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    border: 0;
+    width: 210px;
+    height: 22px;
+}
+.subscribe-button{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+
+    width: 206px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #a259ff;
+    border: 0;
+}
+.subscribe-button:hover {
+    box-shadow: inset 1px 1px 10px -1px #6b3ba8;
+    transform: translateY(-0.4px);
+}
+.copyright-info{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.copyright-text{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 110%;
+    color: #CCCCCC;
+
+    padding: 0px 80px 40px 90px;
+    align-items: center;
+    justify-content: center;
+    /* width: 1050px; */
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-SemiBold.ttf");
+    font-weight: 600;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-Regular.ttf");
+    font-weight: 400;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "WorkSans";
+    src: url("../fonts/WorkSans-Bold.ttf");
+    font-weight: 700;
+    font-style:normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SpaceMono";
+    src: url(../fonts/SpaceMono-Bold.ttf);
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "SpaceMono";
+    src: url(../fonts/SpaceMono-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}

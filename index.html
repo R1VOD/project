@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    
     <header class="header">
         <div class="logo">
             <img src="images/logo.svg" alt="">
@@ -75,10 +76,11 @@
                     <div class="artist">
                         <a href="#">
                             <img class="avatar" src="images/avatars/MrFox.jpg" alt=""> 
+                            <span class="collection-author">
+                                MrFox
+                            </span>
                         </a>
-                        <span class="collection-author">
-                            MrFox
-                        </span>
+                        
                     </div>
                 </div>
 
@@ -104,10 +106,10 @@
                     <div class="artist">
                         <a href="#">
                             <img class="avatar" src="images/avatars/Shroomie.jpg" alt=""> 
+                            <span class="collection-author">
+                                Shroomie
+                            </span>
                         </a>
-                        <div class="collection-author">
-                            Shroomie
-                        </div>
                     </div>
                 </div>
 
@@ -133,10 +135,10 @@
                         <div class="artist">
                             <a href="#">
                                 <img class="avatar" src="images/avatars/BeKind2Robots.jpg" alt=""> 
+                                <span class="collection-author">
+                                    BeKind2Robots
+                                </span>
                             </a>
-                            <span class="collection-author">
-                                BeKind2Robots
-                            </span>
                         </div>
                 </div>
             </div>
@@ -368,22 +370,146 @@
                     <div class="discover-more-nft-card">
                         <img class="discover-more-nft-img" src="images/discoverMoreNFTs/DistantGalaxy.jpg" alt="">
                         <div class="NFT-info">
-                            <div class="artist-info">
+                            <div class="discover-artist-info">
                                 <p class="NFT-name">Distant Galaxy</p>
-                                <div class="avatar_nickname">
-
+                                <a href="">
+                                    <img src="images/avatars/MoonDancer.jpg" alt="">
+                                    <span>MoonDancer</span>
+                                </a>
+                            </div>
+                            <div class="discover-additional-info">
+                                <div class="price">
+                                    <span class="price-head">Price</span>
+                                    <span class="price-num">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid">
+                                    <span class="highest-bid-head">Highest Bid</span>
+                                    <span class="highest-bid-num">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="discover-more-nft-card">
+                        <img class="discover-more-nft-img" src="images/discoverMoreNFTs/LifeonEdena.jpg" alt="">
+                        <div class="NFT-info">
+                            <div class="discover-artist-info">
+                                <p class="NFT-name">Distant Galaxy</p>
+                                <a href="">
+                                    <img src="images/avatars/NebulaKid.jpg" alt="">
+                                    <span>NebulaKid</span>
+                                </a>
+                            </div>
+                            <div class="discover-additional-info">
+                                <div class="price">
+                                    <span class="price-head">Price</span>
+                                    <span class="price-num">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid">
+                                    <span class="highest-bid-head">Highest Bid</span>
+                                    <span class="highest-bid-num">0.33 wETH</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="discover-more-nft-card">
-                        <img class="discover-more-nft-img" src="images/discoverMoreNFTs/LifeonEdena.jpg" alt="">
-                    </div>
-                    <div class="discover-more-nft-card">
                         <img class="discover-more-nft-img" src="images/discoverMoreNFTs/AstroFiction.jpg" alt="">
+                        <div class="NFT-info">
+                            <div class="discover-artist-info">
+                                <p class="NFT-name">Distant Galaxy</p>
+                                <a href="">
+                                    <img src="images/avatars/Spaceone.jpg" alt="">
+                                    <span>Spaceone</span>
+                                </a>
+                            </div>
+                            <div class="discover-additional-info">
+                                <div class="price">
+                                    <span class="price-head">Price</span>
+                                    <span class="price-num">1.63 ETH</span>
+                                </div>
+                                <div class="highest-bid">
+                                    <span class="highest-bid-head">Highest Bid</span>
+                                    <span class="highest-bid-num">0.33 wETH</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="NFT-Highlight">
+            <div class="Highlight-NFT-info frame-240">
+                <div class="NFT-Artist-Button">
+                    <a href="" class="NFT-Highlight-Artist">
+                        <img src="images/avatars/Shroomie.jpg" alt="">
+                        <span class="Highlight-artist-name">Shroomie</span>
+                    </a>
+                    <h1 class="Highlight-name">Magic Mashrooms</h1>
+                    <button class="Highlight-button">See NFT</button>
+                </div>
+                <div class="auction-timer">
+                    <span class="auction-text">
+                        Auction ends in:
+                    </span>
+                    <span class="timer" id="timer">59 : 59 : 59</span>
+                    <div class="timer-name">
+                        <span>Hours</span>
+                        <span>Minutes</span>
+                        <span>Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="howItWorks">
+            <div class="howItWorks-headline">
+                <h1 class="howItWorks-main">How it works</h1>
+                <h2 class="howItWorks-sub">Find out how to get started</h2>
+            </div>
+            <div class="howItWorks-row">
+                <div class="info-card">
+                    <img class="info-card-img" src="images/howItWorks/wallet.svg" alt="">
+                    <span class="info-card-main">Setup Your wallet</span>
+                    <span class="info-card-sub">
+                        Set up your wallet of choice. 
+                        Connect it to the Animarket by 
+                        clicking the wallet icon in the 
+                        top right corner.
+                    </span>
+                </div>
+                <div class="info-card">
+                    <img class="info-card-img" src="images/howItWorks/collection.svg" alt="">
+                    <span class="info-card-main">Create Collection</span>
+                    <span class="info-card-sub">
+                        Upload your work and setup your collection.
+                        Add a description, social links and floor price.
+                    </span>
+                </div>
+                <div class="info-card">
+                    <img class="info-card-img" src="images/howItWorks/cart.svg" alt="">
+                    <span class="info-card-main">Start Earning</span>
+                    <span class="info-card-sub">
+                        Choose between auctions and fixed-price listings.
+                        Start earning by selling your NFTs or trading others.
+                    </span>
+                </div>
+            </div>
+        </section>
+        <section class="subscribe-widget">
+            <div class="subscribe-widget-box">
+                <img class="subscribe-widget-img" src="images/howItWorks/Photo.jpg" alt="">
+                <div class="subscribe-widget-frame">
+                    <div class="subscribe-widget-text">
+                        <span class="subscribe-widget-main">Join Our Weekly Digest</span>
+                        <span class="subscribe-widget-sub">Get exclusive promotions & updates straight to your inbox.</span>
+                    </div>
+                    <form class="subscribe-widget-form-box">
+                        <input class="subscribe-widget-form-input" type="email" placeholder="Enter your email here">
+                        <button class="subscribe-widget-form-button">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            
         </section>
     </main>
 
@@ -419,11 +545,11 @@
                 </div>  
             </div>
             <div class="copyright-info">
-                <img src="images/divider.svg" alt="">
                 <span class="copyright-text">Ⓒ NFT Market. Use this template freely.</span>
             </div>
         </section>
         
     </footer>
+    <script src="js/timer.js"></script>   
 </body>
 </html>

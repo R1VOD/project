@@ -5,12 +5,6 @@ html, body{
 h1, h2{
     margin: 0;
 }
-footer{
-    background-color: #3b3b3b;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-}
 .nav{
     gap: 20px;
 }
@@ -169,16 +163,15 @@ footer{
 }
 .trending-collection{
     align-items: center;
+    align-self: stretch;
     display: flex;
     flex-direction: column;
-    padding-top: 80px;
-    padding-bottom: 80px;
-    padding: 80px 195px;
+    /* padding: 80px 435px 80px 435px; */
     gap: 60px;
-    width: auto;
 }
 .trending-collection-headline{
-    align-items: flex-start;
+    width: 1046px;
+    align-content: flex-start;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -190,7 +183,6 @@ footer{
     line-height: 120%;
     color: #ffffff;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
-    width: 1046px;
 }
 .trending-collection-sub-text{
     font-weight: 400;
@@ -198,7 +190,6 @@ footer{
     line-height: 160%;
     color: #ffffff;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
-    width: 1046px;
 }
 .collections-card-column{
     display: flex;
@@ -218,10 +209,9 @@ footer{
     width: 330px;
 }
 .card-row{
-    align-items: flex-start;
     display: flex;
     gap: 15px;
-    position: relative;
+
 }
 .secondary-placeholder-1{
     width: 100px;
@@ -257,17 +247,22 @@ footer{
     color: #ffffff;
 }
 .artist-card{
-    align-content: center;
     align-items: flex-start;
     display: flex;
     gap: 15px;
     position: relative;
 }
 .collection-author{
+    display: flex;
     font-weight: 400;
     font-size: 16px;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
     color: #ffffff;
+}
+.artist a{
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 .avatar{
     border-radius: 20px;
@@ -304,7 +299,7 @@ footer{
     flex-direction: column;
     position: relative;
     gap: 10px;
-
+    width: 703px;
 }
 .top-creators-main-text{
     font-weight: 600;
@@ -312,7 +307,7 @@ footer{
     line-height: 120%;
     color: #ffffff;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
-    width: 703px;
+
 }
 .top-creators-sub-text{
     font-weight: 400;
@@ -320,7 +315,6 @@ footer{
     line-height: 160%;
     color: #ffffff;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
-    width: 703px;
 }
 .view-ranking{
     gap: 12px;
@@ -352,7 +346,7 @@ footer{
     justify-content: center;
 }
 .artist-cards-grid{
-    align-self: center;
+    /* align-self: center; */
     gap: 30px;
     display: flex;
     flex-direction: column;
@@ -411,7 +405,7 @@ footer{
 }
 .additional-info{
     align-items: center;
-    align-self: stretch;
+    /* align-self: stretch; */
     background-color: transparent;
     display: flex;
     gap: 5px;
@@ -583,18 +577,25 @@ footer{
     gap: 30px;
 }
 .discover-more-nft-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 420px;
     height: 469px;
     background-color: #3b3b3b;
     border-radius: 20px;
 }
-.artist-info{
-display: flex;
-}
+
 .NFT-info{
+    align-self: stretch;
     display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px 30px 25px;
+    position: relative;
 }
 .NFT-name{
+    align-self: start;
     margin: 0;
     font-family: "WorkSans", Arial, Helvetica, sans-serif;
     line-height: 140%;
@@ -602,8 +603,71 @@ display: flex;
     font-size: 22px;
     color: #ffffff;
 }
-.avatar_nickname{
+.discover-artist-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.discover-artist-info a{
+    display: flex;
+    gap: 12px;
 
+    align-items: center;
+    text-decoration: none;
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.discover-artist-info img{
+    border-radius: 15px;
+    width: 24px;
+    height: 24px;
+}
+.discover-additional-info{
+    display: flex;
+}
+.price{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 8px;
+    /* padding: 0px 21px 0px 0px; */
+}
+.price-head{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #858584;
+}
+.price-num{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.highest-bid{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    gap: 8px;
+}
+.highest-bid-head{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 14px;
+    color: #858584;
+}
+.highest-bid-num{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
 }
 .discover-more-nft-img{
     display: flex;
@@ -615,36 +679,286 @@ display: flex;
     border-top-left-radius: 20px;
     
 }
+.NFT-Highlight{
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    background-image: url("../images/Placeholder/Secondary_Photo_Placeholder\(Magic_Mushrooms\)\(2\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: space;
+    background-position: center;
+    height: 640px;
+}
+.Highlight-NFT-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 360px 435px 60px 435px;
+    background: linear-gradient(180deg, rgba(162, 89, 255, 0) 0%, rgb(162, 89, 255) 100%);
+}
+.frame-240{
+    display: flex;
+    flex: 1;
+}
+.NFT-Artist-Button{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 30px;
+}
+.NFT-Highlight-Artist{
+    display: flex;
+    width: 151px;
+    align-items: center;
+    background-color: #3b3b3b;
+    padding: 10px 0px 10px 20px;
+    border-radius: 20px;
+    gap: 12px;
+}
+.Highlight-name{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 110%;
+    font-weight: 600;
+    font-size: 51px;
+    color: #ffffff;
+}
+.Highlight-button{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 600;
+    font-size: 16px;
+    color: #2B2B2B;
+
+    background-image: url(../images/vectorIcons/Eye.svg);
+    background-color: #FFFFFF;
+    background-repeat: no-repeat;
+    background-position: 3cap;
+    align-items: center;    
+    border-radius: 0;
+    width: 198px;
+    height: 60px;
+    border-radius: 20px;
+}
+.Highlight-NFT-info img{
+    width: 24px;
+    height: 24px;
+    border-radius: 20px;
+}
+.Highlight-artist-name{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.auction-timer{
+    display: flex;
+    flex-direction: column;
+    background-color: #3B3B3B50;
+    padding: 30px;
+    border-radius: 20px;
+    gap: 10px;
+}
+.auction-text{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 110%;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+}
+.timer{
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 120%;
+    font-weight: 800;
+    font-size: 38px;
+    color: #ffffff;
+}
+.timer-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 73px;
+    font-family: "SpaceMono", Arial, Helvetica, sans-serif;
+    line-height: 110%;
+    font-weight: 400;
+    font-size: 12px;
+    color: #ffffff;
+}
+.howItWorks{
+    display: flex;
+    flex-direction: column;
+    padding: 80px 435px;
+    gap: 48px;
+    align-items: center;
+}
+.howItWorks-headline{
+    display: flex;
+    width: 1033px;
+    flex-direction: column;
+    gap: 10px;
+}
+.howItWorks-main{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffff;
+}
+.howItWorks-sub{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+}
+.howItWorks-row{
+    display: flex;
+    gap: 30px;
+}
+.info-card{
+    display: flex;
+    flex-direction: column;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+    padding: 30px 30px;
+}
+.info-card-img{
+    width: 250px;
+    height: 250px;
+}
+.info-card-main{
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 700;
+    font-size: 22px;
+    color: #ffffff;
+}
+.info-card-sub{
+    text-align: center;
+
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 140%;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+.subscribe-widget{
+    display: flex;
+    padding: 80px 435px;
+}
+.subscribe-widget-box{
+    display: flex;
+    gap: 80px;
+    padding: 60px;
+    background-color: #3B3B3B;
+    border-radius: 20px;
+}
+.subscribe-widget-img{
+    display: flex;
+    flex: 1;
+    width: 425px;
+    height: 310px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.subscribe-widget-frame{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 425px;
+}
+.subscribe-widget-text{
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.subscribe-widget-main{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 120%;
+    font-weight: 700;
+    font-size: 38px;
+    color: #ffffff;
+}
+.subscribe-widget-sub{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    line-height: 160%;
+    font-weight: 400;
+    font-size: 22px;
+    color: #ffffff;
+}
+.subscribe-widget-form-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 20px;
+    width: 425px;
+    height: 60px;
+    padding-left: 27px;
+}
+.subscribe-widget-form-input{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    border: 0;
+    width: 182px;
+    height: 22px;
+    padding-right: 30px;
+}
+.subscribe-widget-form-button{
+    font-family: "WorkSans", Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #ffffff;
+
+    width: 211px;
+    height: 60px;
+    border-radius: 20px;
+    background-color: #a259ff;
+    background-image: url(../images/vectorIcons/mail.svg);
+    background-repeat: no-repeat;
+    background-position: 4cap;
+    border: 0;
+}
+.subscribe-widget-form-button:hover {
+    box-shadow: inset 1px 1px 10px -1px #6b3ba8;
+    transform: translateY(-0.4px);
+}
 
 
 
 
 
 .footer{
+    padding: 0px;
+    align-items: center;
     display: flex;
     flex-direction: column;
     background-color: #3b3b3b;
-    
+    padding: 40px 320px 0px 320px;
 }
 .footer-info{
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 80px 195px 0px 80px;
-    width: 1050px;
-    height: 191px;
+    /* width: 1050px;
+    height: 191px; */
 }
 .nft-marketplace{
     justify-items: center;
     display: flex;
     flex-direction: column;
-    width: 243px;
-    height: 191px;
     gap: 30px;
     padding-right: 120px;
 }
 .footer-logo{
-    width: 243;
+    width: 243px;
     height: 32px;
     display: flex;
     align-items: center;
@@ -772,11 +1086,6 @@ display: flex;
     font-size: 12px;
     line-height: 110%;
     color: #CCCCCC;
-
-    padding: 0px 80px 40px 90px;
-    align-items: center;
-    justify-content: center;
-    /* width: 1050px; */
 }
 @font-face {
     font-family: "WorkSans";
@@ -812,4 +1121,49 @@ display: flex;
     font-weight: 400;
     font-style: normal;
     font-display: swap;
+}
+@media (max-width: 1279px) {
+    .trending-collection-headline{
+        width: 690px;
+    }
+    .top-creators-headline{
+        width: 690px;
+    }
+    .top-creators-text{
+        width: 343px;
+    }
+    footer{
+        background-color: #3b3b3b;
+
+    }
+    .footer{
+        align-items: flex-start;
+        display: flex;
+        padding: 40px 72px 0px 72px;
+        flex-direction: column;
+        background-color: #3b3b3b; 
+    }
+    .footer-info{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .copyright-text{
+        align-items: center;
+    }
+    .nft-marketplace{
+        padding: 0px;
+    }
+    .nft-marketplace span{
+        /* width: 690px; */
+    }
+    .subscribe h2{
+        /* width: 690px; */
+    }
+    .subscribe-form-input{
+        width: 241px;
+    }
+    .subscribe-button{
+        width: 179px;
+    }
 }
